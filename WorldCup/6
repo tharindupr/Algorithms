@@ -1,0 +1,4 @@
+NM=map(int,raw_input().split(" "))
+b=[]
+for i in range(NM[0]):
+    b.append(raw_input())

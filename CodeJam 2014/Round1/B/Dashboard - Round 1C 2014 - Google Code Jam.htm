@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://code.google.com/codejam/contest/3004486/dashboard#s=p1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="refresh" content="172795">
+  
+  <title>
+    Dashboard - Round 1C 2014 - Google Code Jam
+  </title>
+  <link rel="stylesheet" type="text/css" href="./Dashboard - Round 1C 2014 - Google Code Jam_files/base.css">
+  <link rel="stylesheet" type="text/css" href="./Dashboard - Round 1C 2014 - Google Code Jam_files/dashboard.css">
+  
+  <script type="text/javascript" async="" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/ga.js"></script><script type="text/javascript" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/Dashboard_en.js"></script>
+  
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.main().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "3004486";
+      GCJ.contest.name = "Round 1C 2014";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 1;
+      
+      GCJ.contest.start_int = 1399798800;
+      GCJ.contest.running = false;
+      GCJ.base_url = '/codejam/contest';
+      GCJ.scoreboardLink = ('<a target="new"' +
+                            'href="scoreboard?c=3004486"' +
+                            '>Contest scoreboard</a>');
+    }
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam";
+    };
+  //--></script>
+</head>
+
+<body onload="GCJ.main()">
+
+<div id="logo-div">
+  <a href="https://code.google.com/codejam/">
+    <img src="./Dashboard - Round 1C 2014 - Google Code Jam_files/logo_image2.gif" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+<div id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Round 1C 2014</div>
+  <hr class="dsb-hr">
+  <div id="dsb-problem-selection-area">
+    <div id="dsb-problem-selection-list" class="after-start-only" style="display: block;">
+    <div><div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title0" class="dynamic-link">A. Part Elf  </div></div></div><div><div id="dsb-problem-tab1" class="dsb-problem-tab-open" tabindex="0" role="button">  <div id="dsb-problem-title1" class="dynamic-link">B. Reordering Train Cars  </div></div></div><div><div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">  <div id="dsb-problem-title2" class="dynamic-link">C. Enclosure  </div></div></div></div>
+    <div id="dsb-problem-selection-list-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      The list of problems will appear here after the contest loads.
+      
+    </div>
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div id="dsb-analysis-button" class="dsb-analysis-tab-close" tabindex="0" role="button" style="display: none;">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-area">
+    <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button" style="display: block;">
+      <div class="dynamic-link">
+        <div id="dsb-ask-question-tab">
+          Ask a question
+        </div>
+      </div>
+    </div>
+    <div class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      You'll be able to ask questions about the problems, and view your
+      submissions, here.
+      
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button" style="display: block;">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div-container">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" class="after-start-only" style="display: block;">
+      <div id="dsb-status-tab-loading-text" class="dsb-pre-contest-text" style="display: none;">
+        Loading...
+      </div>
+    <div id="dsb-status-tab-problems" style="display: block;"><div><div id="dsb-problem-status-wrapper0" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Part Elf</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_0" class="inputName">8pt</td>      <td class="status">        <div id="selfStat0_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_0" class="globalStat" style="display: none;"></div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName0_1" class="inputName">12pt</td>      <td class="status">        <div id="selfStat0_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat0_1" class="globalStat" style="display: none;"></div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper1" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Reordering Train Cars</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_0" class="inputName">10pt</td>      <td class="status">        <div id="selfStat1_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_0" class="globalStat" style="display: none;"></div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName1_1" class="inputName">25pt</td>      <td class="status">        <div id="selfStat1_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat1_1" class="globalStat" style="display: none;"></div>      </td>    </tr>  </tbody></table></div></div></div><div><div id="dsb-problem-status-wrapper2" class="problem-status-wrapper">  <div class="dsb-status-problem-title">Enclosure</div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_0" class="inputName">15pt</td>      <td class="status">        <div id="selfStat2_0" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_0" class="globalStat" style="display: none;"></div>      </td>    </tr>  </tbody></table></div><div><table class="problemStatus">  <tbody>    <tr class="inputSetStatus">      <td id="inputName2_1" class="inputName">30pt</td>      <td class="status">        <div id="selfStat2_1" class="dsb-mini-status-non-highlight">Not attempted</div>        <div id="globalStat2_1" class="globalStat" style="display: none;"></div>      </td>    </tr>  </tbody></table></div></div></div></div></div>
+    <div id="dsb-status-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+      
+      Statistics about the problems will appear here.  They'll include your
+      status on each problem, and other contestants' attempts.
+      
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor=&#39;pointer&#39;" onclick="GCJ.toggleVisibility(
+              &#39;dsb-scoreboard-table&#39;,
+              &#39;dsb-scoreboard-panel-button&#39;,
+              &#39;/codejam/contest/static/minus.gif&#39;,
+              &#39;/codejam/contest/static/plus.gif&#39;)">
+          <img id="dsb-scoreboard-panel-button" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap" class="after-start-only" style="display: block;"><table id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display:none"><td class="dsb-name-td" id="sbName_0">&nbsp;</td><td class="dsb-score-td" id="sbScore_0">&nbsp;</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display:none"><td class="dsb-name-td" id="sbName_1">&nbsp;</td><td class="dsb-score-td" id="sbScore_1">&nbsp;</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display:none"><td class="dsb-name-td" id="sbName_2">&nbsp;</td><td class="dsb-score-td" id="sbScore_2">&nbsp;</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display:none"><td class="dsb-name-td" id="sbName_3">&nbsp;</td><td class="dsb-score-td" id="sbScore_3">&nbsp;</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display:none"><td class="dsb-name-td" id="sbName_4">&nbsp;</td><td class="dsb-score-td" id="sbScore_4">&nbsp;</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display:none"><td class="dsb-name-td" id="sbName_5">&nbsp;</td><td class="dsb-score-td" id="sbScore_5">&nbsp;</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display:none"><td class="dsb-name-td" id="sbName_6">&nbsp;</td><td class="dsb-score-td" id="sbScore_6">&nbsp;</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display:none"><td class="dsb-name-td" id="sbName_7">&nbsp;</td><td class="dsb-score-td" id="sbScore_7">&nbsp;</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display:none"><td class="dsb-name-td" id="sbName_8">&nbsp;</td><td class="dsb-score-td" id="sbScore_8">&nbsp;</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display:none"><td class="dsb-name-td" id="sbName_9">&nbsp;</td><td class="dsb-score-td" id="sbScore_9">&nbsp;</td></tr></tbody></table></div>
+      <div id="dsb-scoreboard-tab-pre-contest" class="dsb-pre-contest-text before-start-only" style="display: none;">
+        
+        The scores of the top 10 contestants will appear here, with a link to
+        the contest's scoreboard.
+        
+      </div>
+      <div class="dsb-mini-tab-link">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert" style="visibility: hidden;">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text">Loading problem information...</span>
+      <span id="dsb-view-sub-link" style="display: none;">View submissions.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+    <div id="dsb-rank-etc">
+      <span id="dsb-time-remaining">
+        <span id="dsb-time-remaining-before" class="before-start-only-inline" style="display: none;">
+          Contest begins in:
+        </span>
+        <span id="dsb-time-remaining-after" class="after-start-only-inline" style="display: inline;">
+          Time Remaining:
+        </span>
+        <span id="contestTimer">2 hours 28 min</span>
+      </span>
+      <span class="after-start-only-inline" style="display: inline;">
+        <span id="dsb-current-rank-div">
+          Rank: <span id="dsb-current-rank-span">1</span>
+        </span>
+        <span id="dsb-current-score-div">
+          Score: <span id="dsb-current-score-span">0</span>
+        </span>
+      </span>
+    </div>
+    <div id="dsb-title-links"><a target="new" href="https://code.google.com/codejam/contest/3004486/scoreboard?c=3004486">Contest scoreboard</a> | <b>tharindu.prf@gmail.com</b> | <a href="https://code.google.com/_ah/logout?continue=https://www.google.com/accounts/Logout%3Fcontinue%3Dhttps://appengine.google.com/_ah/logout%253Fcontinue%253Dhttps://code.google.com/codejam/contest%26service%3Dah">Sign out</a></div>
+  </div>
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+   <!-- Problem Title -->
+    <h3 id="dsb-problem-title-area">
+      <span id="dsb-problem-title-div-pre-contest" class="problem-title before-start-only" style="display: none;">
+        <span style="color:#666">Problem.</span>
+        The problem's name goes here.
+      </span>
+      <span id="dsb-problem-title-div" class="problem-title after-start-only" style="display: block;"><span style="color:#666">Problem B.</span> Reordering Train Cars</span>
+    </h3>
+
+    <div class="dsb-content-pages before-start-only" style="display: none;">
+      
+      We're now waiting for the contest to start.  Once the contest starts,
+      the problems will automatically load, and Problem A will display here.
+      You don't have to solve that problem first; you will be able to select
+      another problem from the list to the left.  Once you've solved one
+      problem, don't forget to work on the others!
+      
+    </div>
+
+    <div id="dsb-problem-pages"><div id="dsb-problem-page0" class="dsb-content-pages" style="display: none;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text0"><span>Confused?  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">quick-start guide</a>.</span></div><table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>8 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-0" class=""><div id="dsb-input-wrapper0-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button0-0" style="display: inline;">Solve A-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-0" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-0">Download A-small-attempt0.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-0" style="display: block;">You may try multiple times, with penalties for wrong submissions.</span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-0" style="display: none;">temp</div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>12 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap0-1" class=""><div id="dsb-input-wrapper0-1" class="dsb-input-wrapper" style="display: none;"><button class="dsb-input-start-button" id="dsb-input-start-button0-1" style="display: inline;">Solve A-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain0-1" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text0-1"></span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption0-1" style="display: block;">You must solve the small input first.<br>You have 8 minutes to solve 1 input file. (Judged after contest.)</span><span class="dsb-input-table-caption" id="dsb-resubmit-caption0-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link0-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div0-1" style="display: none;">temp</div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div0" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Vida says she's part Elf: that at least one of her ancestors was an Elf. But she doesn't know if it was a parent (1 generation ago), a grandparent (2 generations ago), or someone from even more generations ago. Help her out!
+</p>
+
+<p>
+Being part Elf works the way you probably expect. People who are Elves, Humans and part-Elves are all created in the same way: two parents get together and have a baby.  If one parent is <code>A/B</code> Elf, and the other parent is <code>C/D</code> Elf, then their baby will be <code>(A/B&nbsp;+&nbsp;C/D)&nbsp;/&nbsp;2</code> Elf. For example, if someone who is <code>0/1</code> Elf and someone who is <code>1/2</code> Elf have a baby, that baby will be <code>1/4</code> Elf.
+</p>
+
+<p>
+Vida is certain about one thing: 40 generations ago, she had <code>2<sup>40</sup></code> different ancestors, and each one of them was <code>1/1</code> Elf or <code>0/1</code> Elf. </p>
+
+<p>
+Vida says she's <b>P</b>/<b>Q</b> Elf. Tell her what is the minimum number of generations ago that there could have been a <code>1/1</code> Elf in her family.  If it is not possible for her to be <b>P</b>/<b>Q</b> Elf, tell her that she must be wrong!
+</p>
+
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> lines follow.  Each contains a fraction of the form <b>P</b>/<b>Q</b>, where <b>P</b> and <b>Q</b> are integers.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is the test case number (starting from 1) and y is the minimum number of generations ago a 1/1 Elf in her family could have been if she is <b>P</b>/<b>Q</b> Elf. If it's impossible that Vida could be <b>P</b>/<b>Q</b> Elf, y should be the string "impossible" (without the quotes).
+</p>
+
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>P</b> &lt; <b>Q</b> ≤ 1000.<br>
+<b>P</b> and <b>Q</b> have no common factors. That means <b>P</b>/<b>Q</b> is a fraction in <i>lowest terms</i>.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>P</b> &lt; <b>Q</b> ≤ 10<sup>12</sup>.<br>
+<b>P</b> and <b>Q</b> <i>may</i> have common factors. <b>P</b>/<b>Q</b> is <i>not</i> guaranteed to be a fraction in lowest terms.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">5
+1/2
+3/4
+1/4
+2/23
+123/31488
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 1
+Case #2: 1
+Case #3: 2
+Case #4: impossible
+Case #5: 8
+
+</pre>
+</td></tr></tbody></table>
+</div>
+
+<p>
+Note that the fifth sample case does not meet the limits for the Small input. Even if you don't solve it correctly, you might still have solved the Small input correctly.
+</p>
+
+<h4>Explanation of sample cases</h4>
+<p>
+In the first sample case, Vida could have a <code>1/1</code> Elf parent and a <code>0/1</code> Elf parent. That means she could have had a 1/1 Elf one generation ago, so the answer is 1.
+</p>
+<p>
+In the second sample case, Vida could have had a <code>1/1</code> Elf parent and a <code>1/2</code> Elf parent. That means she could have had a <code>1/1</code> Elf one generation ago, so the answer is 1.
+</p>
+<p>
+In the third sample case, Vida could have had a <code>0/1</code> Elf parent and a <code>1/2</code> Elf parent. The <code>1/2</code> Elf parent could have had a <code>1/1</code> Elf parent and a <code>0/1</code> Elf parent. That means she could have had a <code>1/1</code> Elf two generations ago, so the answer is 2.
+</p>
+<p>
+In the fourth sample case, it's impossible to be exactly <code>2/23</code> Elf if your ancestors 40 generations ago were all <code>0/1</code> Elf or <code>1/1</code> Elf.
+</p>
+
+<h3>Note</h3>
+
+<p>
+Yes, Vida has a lot of ancestors. If that is the part of the problem that seems the most unrealistic to you, please re-read the part about Elves.
+</p></div></div><div id="dsb-problem-page1" class="dsb-content-pages" style="display: block;"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text1"><span>Confused?  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">quick-start guide</a>.</span></div><table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-0" class=""><div id="dsb-input-wrapper1-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button1-0" style="display: inline;">Solve B-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-0" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-0">Download B-small-attempt0.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-0" style="display: block;">You may try multiple times, with penalties for wrong submissions.</span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-0" style="display: none;">temp</div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>25 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap1-1" class=""><div id="dsb-input-wrapper1-1" class="dsb-input-wrapper" style="display: none;"><button class="dsb-input-start-button" id="dsb-input-start-button1-1" style="display: inline;">Solve B-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain1-1" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text1-1"></span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption1-1" style="display: block;">You must solve the small input first.<br>You have 8 minutes to solve 1 input file. (Judged after contest.)</span><span class="dsb-input-table-caption" id="dsb-resubmit-caption1-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link1-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div1-1" style="display: none;">temp</div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div1" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Yahya is a brilliant kid, so his mind raises a lot of interesting questions when he plays with his toys. Today's problem came about when his father brought him a set of <a href="https://www.google.com/search?q=train+car+toys&tbm=isch" target="_blank">train cars</a>, where each car has a lowercase letter written on one side of the car.
+</p>
+<p>
+When he first saw the gift, he was happy and started playing with them, connecting cars together without any particular goal. But after a while he got bored (as usual) from playing without having any goal. So, he decided to define a new interesting problem.
+</p>
+<p>
+The problem is that he currently has <b>N</b> sets of connected cars. He can represent each set of connected cars as a string of lowercase letters. He wants to count the number of ways he can connect all <b>N</b> sets of cars to form one <i>valid</i> train. A train is valid if all occurrences of the same character are adjacent to each other.
+</p>
+<img src="./Dashboard - Round 1C 2014 - Google Code Jam_files/saved_resource">
+<p>
+The previous figure is one way Yahya could connect the cars "ab", "bc" and "cd" to make a valid train: "ab bc cd". If he had connected them in the order "cd ab bc", that would have been invalid: the "c" characters would not have been adjacent to each other.
+</p>
+<p>
+You've surely noticed that this is not an easy problem for Yahya to solve, so he needs your help (and he is sure that you will give it!). That's it; go and help Yahya!
+</p>
+<p>
+<b>Note</b>: letters are written only on one side of the cars, so you can not reverse them. For example, if a car has "ab" written on it, it could not be changed to read "ba".
+</p>
+
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> test cases follow. The first line of each test case contains a single integer <b>N</b>, the number of sets of connected cars. The following line contains <b>N</b> strings separated by a single space. Every given string represents a set of connected cars and is composed of lowercase English letters only.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is the test case number (starting from 1) and y is the number of different ways of obtaining a valid train. As this number may be very big, output the number of ways <i>modulo 1,000,000,007</i>.
+</p>
+
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ Set of connected <b>Cars'</b> lengths ≤ 100.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 10.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 100.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">3
+3
+ab bbbc cd
+4
+aa aa bc c
+2
+abc bcd
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 1
+Case #2: 4
+Case #3: 0
+</pre>
+</td></tr></tbody></table>
+</div>
+
+
+<h4>Sample Explanation</h4>
+<p>
+In the first case, there is only one way to form a valid train by joining string <i>"ab"</i> to <i>"bbbc"</i> to <i>"cd"</i> in this order.
+</p>
+<p>
+While in the second case, there are 4 possible ways to form a valid train. Notice that there are two different sets of connected cars represented by the string <i>"aa"</i>, so there are two different ways to order these two strings and to group them to be one set of connected cars <i>"aaaa"</i>. Also there is only one way to order set of cars <i>"bc"</i> with <i>"c"</i> in only one way to be <i>"bcc"</i>. After that you can order <i>"aaaa"</i> and <i>"bcc"</i> in two different ways. So totally there are 2*2 = 4 ways to form a valid train.
+</p>
+<p>
+In the third sample case, there is no possible way to form a valid train, as if joined in any of the two ways <i>"abc"+"bcd"</i> or <i>"bcd"+"abc"</i>, there will be two letters of <i>"b"</i> and <i>"c"</i> not consecutive.
+</p>
+</div></div><div id="dsb-problem-page2" class="dsb-content-pages"><!-- Problem Input File Selection --><div class="dsb-input-panel-text" id="dsb-input-panel-text2"><span>Confused?  Read the <a href="https://code.google.com/codejam/quickstart.html" target="_blank">quick-start guide</a>.</span></div><table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>15 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-0" class=""><div id="dsb-input-wrapper2-0" class="dsb-input-wrapper" style="display: inline;"><button class="dsb-input-start-button" id="dsb-input-start-button2-0" style="display: inline;">Solve C-small</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-0" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-0">Download C-small-attempt0.in</span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-0" style="display: block;">You may try multiple times, with penalties for wrong submissions.</span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-0" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-0">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-0" style="display: none;">temp</div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>30 points</td><td class="dsb-input-table-linktd"><div id="dsb-action-box-wrap2-1" class=""><div id="dsb-input-wrapper2-1" class="dsb-input-wrapper" style="display: none;"><button class="dsb-input-start-button" id="dsb-input-start-button2-1" style="display: inline;">Solve C-large</button><span class="dsb-input-link-span" id="dsb-input-link-plain2-1" style="display: none;"><img class="dsb-input-link-img" src="./Dashboard - Round 1C 2014 - Google Code Jam_files/file.gif"><span class="dsb-input-link-text" id="dsb-input-link-plain-text2-1"></span></span></div><span class="dsb-input-table-caption" id="dsb-input-table-caption2-1" style="display: block;">You must solve the small input first.<br>You have 8 minutes to solve 1 input file. (Judged after contest.)</span><span class="dsb-input-table-caption" id="dsb-resubmit-caption2-1" style="display: none;">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span>.<br>Only your last submission counts. <span class="dsb-input-link-text" id="dsb-resubmit-view-sub-link2-1">View your last submission</span>.</span><div><div class="dsb-submit-form-div" id="dsb-submit-form-div2-1" style="display: none;">temp</div></div></div></td></tr></tbody></table><!-- Problem Statement --><div id="dsb-problem-content-div2" class="dsb-problem-content-div" style="width: 40em;"><h3>Problem</h3>
+<p>
+Your task in this problem is to find out the minimum number of stones needed to place on an N-by-M rectangular grid (N horizontal line segments and M vertical line segments) to enclose at least K intersection points. An intersection point is enclosed if either of the following conditions is true:</p>
+<ol>
+<li>A stone is placed at the point.</li>
+<li>Starting from the point, we cannot trace a path along grid lines to reach an empty point on the grid border through empty intersection points only.</li>
+</ol>
+<p>For example, to enclose 8 points on a 4x5 grid, we need at least 6 stones. One of many valid stone layouts is shown below. Enclosed points are marked with an "x".
+</p>
+
+<p>
+<img src="./Dashboard - Round 1C 2014 - Google Code Jam_files/saved_resource(1)">
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> lines follow.  Each test case is a line of three integers: <b>N</b> <b>M</b> <b>K</b>.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is the test case number (starting from 1) and y is the minimum number of stones needed.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>N</b>.<br>
+1 ≤ <b>M</b>.<br>
+1 ≤ <b>K</b> ≤ <b>N</b> × <b>M</b>.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+<b>N</b> × <b>M</b> ≤ 20.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+<b>N</b> × <b>M</b> ≤ 1000.<br>
+</p>
+
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<pre class="io-content">2
+4 5 8
+3 5 11
+
+</pre>
+</td>
+<td>
+<pre class="io-content">Case #1: 6
+Case #2: 8
+
+</pre>
+</td></tr></tbody></table>
+</div>
+</div></div></div>
+
+    <div id="dsb-analysis-page" class="dsb-content-pages"></div>
+
+    <div id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table id="dsb-clarification-table">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody">
+          </tbody>
+        </table>
+      </div>
+      <div id="dsb-submit-clarification">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="MTQxOWI2MzJhMWQ1YjY3YWUxMDUzZjgzZTI3YWVkM2Z8MTAwMDI2MjcwNjk0MDA1MTQyNzQ1fDEzOTk3OTg4MDIxMjY4OTM="></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+              <select id="dsb-clarification-problem-select" name="problem">
+                <option value="_" selected="">[General]</option>
+              <option value="5706278382862336">A. Part Elf</option><option value="5669245564223488">B. Reordering Train Cars</option><option value="5658068650033152">C. Enclosure</option></select>
+              &nbsp;
+              <input id="dsb-submit-clarification-button" type="submit" value="Ask">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0 0.3em 0">
+        
+        There is a maximum of 8 pending questions.
+        You can ask more questions as soon as we have responded to some of your
+        questions.
+        
+      </div>
+
+    </div>
+
+    <div id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">
+        You have 0 submissions.
+      </div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display:none">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      </tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  
+  <p>
+    
+    All problem statements, input data and contest analyses are
+    licensed under the
+    <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License</a>.
+    
+  </p>
+  
+  <span id="copyright">© 2008-2013 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="https://code.google.com/codejam/terms.html">Terms and Conditions</a> -
+  <a href="http://www.google.com/intl/en/policies">Privacy Policies and Principles</a>
+  <br><br>
+  <a href="http://developers.google.com/appengine"><img src="./Dashboard - Round 1C 2014 - Google Code Jam_files/appengine-noborder-120x30.gif"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input type="text" name="history_state0" id="history_state0" style="display:none">
+
+
+
+
+</div></body></html>
